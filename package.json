@@ -1,0 +1,7 @@
+{
+  "name": "dzshop-telegram-relay",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Authenticated Netlify Function relay for DZShop Telegram notifications"
+}
