@@ -1,8 +1,8 @@
-const json = (statusCode, body) => ({
-  statusCode,
-  headers: { "content-type": "application/json; charset=utf-8" },
-  body: JSON.stringify(body),
-});
+const json = (status, body) =>
+  new Response(JSON.stringify(body), {
+    status,
+    headers: { "content-type": "application/json; charset=utf-8" },
+  });
 
 export default async (req) => {
   if (req.method !== "POST") {
